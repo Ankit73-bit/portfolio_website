@@ -1,0 +1,37 @@
+.light {
+  --bg-nav: var(--gray0);
+  --nav-logo: var(--gray6);
+  --logo-link: var(--black);
+  --profile-border: var(--black);
+  --sidebar: var(--lightseagreen);
+  --bg-header: var(--gray2);
+  --name: var(--verdigris2);
+  --bg-cv: var(--blue);
+  --bg-title: var(--lightdarkblue);
+  --bg-project: var(--gray1);
+  --bg-icon: var(--white);
+  --num-icon-fill: var(--gray6);
+  --color-demo: var(--verdigris2);
+  --bg-skill: var(--gray1);
+  --skill-hover: var(--verdigris1);
+}
+.dark {
+  --bg-main: var(--gray3);
+  --bg-nav: var(--gray4);
+  --nav-logo: var(--gray0);
+  --logo-link: var(--white);
+  --profile-border: var(--lightdarkblue);
+  --sidebar: var(--gray6);
+  --bg-header: var(--gray3);
+  --name: var(--white);
+  --bg-cv: var(--black);
+  --bg-title: var(--lightdarkblue);
+  --bg-project: var(--gray4);
+  --bg-project-main: var(--gray3);
+  --bg-icon: var(--gray3);
+  --num-icon-fill: var(--gray6);
+  --color-demo: var(--gray2);
+  --project-title: var(--gray2);
+  --bg-skill: var(--gray4);
+  --skill-hover: var(--gray5);
+}

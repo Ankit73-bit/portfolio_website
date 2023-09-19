@@ -1,0 +1,64 @@
+.projects {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: col-start / col-end;
+  grid-gap: 6rem;
+  margin-top: 6rem;
+  background-color: $background-color_8;
+}
+.project {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: stretch;
+  padding: 1rem;
+  background-color: $background-color_9;
+}
+.project-title {
+  background-color: $background-color_10;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.icon {
+  background-color: $background-color_11;
+  fill: var(--num-icon-fill);
+}
+.project-icon {
+  height: 3rem;
+  width: 3rem;
+}
+.info {
+  padding: 1rem;
+}
+.project-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: $color_7;
+}
+.description {
+  font-size: 1.5rem;
+}
+.tech {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.tech-name {
+  font-weight: 900;
+}
+.demo {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: $color_8;
+}
+.git-icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-demo);
+}
+.project-3 {
+  margin-bottom: 5rem;
+}

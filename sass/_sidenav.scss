@@ -1,0 +1,140 @@
+.sidenav {
+  position: absolute;
+}
+.menubar {
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  width: 25rem;
+  height: calc(100vh - 8rem);
+  background-color: $background-color_2;
+  z-index: 5;
+}
+.menu-visible {
+  display: none;
+}
+.side-nav {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.side-nav__item {
+  position: relative;
+  list-style: none;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: $background-color_4;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s 0.2s;
+  }
+  &:hover {
+    &:before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+  }
+}
+.side-nav__item--active {
+  &::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+}
+.side-nav__link {
+  &:link {
+    color: $color_3;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+  }
+  &:visited {
+    color: $color_3;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+  }
+}
+.side-nav__icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
+  fill: currentColor;
+}
+.dropdown {
+  position: absolute;
+  top: -0.1rem;
+  width: 200px;
+  padding: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 30;
+  border-top: 2px solid var(--border-color);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.1rem;
+  padding: 0.5rem;
+  background-color: $background-color_5;
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+  transform: translateX(125%);
+  transition: opacity 0.15s ease-out;
+}
+.has-dropdown {
+  &:hover {
+    .dropdown {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+  &:focus-within {
+    .dropdown {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+}
+.dropdown-item {
+  margin: 0.2rem 0;
+  list-style: none;
+  margin-bottom: 3rem;
+  a {
+    width: 100%;
+    padding: 2rem;
+    margin-top: -7rem;
+    color: $color_4;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    text-transform: uppercase;
+    &:hover {
+      color: $color_5;
+    }
+    &::before {
+      content: " ";
+      border: 2px solid var(--border-color);
+      border-radius: 50%;
+      width: 3rem;
+      height: 2rem;
+    }
+  }
+}

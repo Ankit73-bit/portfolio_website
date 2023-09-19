@@ -1,0 +1,76 @@
+$color_1: var(--nav-logo);
+$color_2: var(--logo-link);
+$color_3: var(--gray0);
+$color_4: #000;
+$color_5: var(--blue);
+$color_6: var(--name);
+$color_7: var(--project-title);
+$color_8: var(--color-demo);
+$color_9: #fff;
+$color_10: var(--gray5);
+$color_11: var(--verdigris2);
+$font-family_1: monospace, sans-serif;
+$background-color_1: var(--bg-nav);
+$background-color_2: var(--sidebar);
+$background-color_3: transparent;
+$background-color_4: var(--blue);
+$background-color_5: var(--gray1);
+$background-color_6: var(--bg-header);
+$background-color_7: var(--bg-cv);
+$background-color_8: var(--bg-project-main);
+$background-color_9: var(--bg-project);
+$background-color_10: var(--bg-title);
+$background-color_11: var(--bg-icon);
+$background-color_12: var(--bg-skill);
+$background-color_13: var(--skill-hover);
+$background-color_14: var(--gray2);
+$background-color_15: var(--lightdarkblue);
+$background-color_16: #fff;
+
+:root {
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --black: #000;
+  --white: #fff;
+  --blue: #0084a5;
+  --purple: #a82dd1;
+  --yellow: #fff565;
+  --tiffanyblue: #9dd9d2;
+  --lightdarkblue: #afd0d6;
+  --verdigris: #79bcb8;
+  --verdigris1: #5ec2b7;
+  --verdigris2: #3aa7a3;
+  --lightseagreen: #2ca6a4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family_1;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  background: var(--bg-main);
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}

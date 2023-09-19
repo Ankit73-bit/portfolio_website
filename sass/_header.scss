@@ -1,0 +1,57 @@
+.header {
+  background-color: $background-color_6;
+  grid-column: full-start / full-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  order: 1;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hi {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+.name {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: $color_6;
+}
+.developer {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.cv {
+  text-decoration: none;
+  background-color: $background-color_3;
+  color: $color_4;
+  font-size: 1rem;
+  border: 0.5px solid #000;
+  padding: 1rem;
+  border-radius: 30px;
+  transition: all 0.2s;
+  &:hover {
+    background-color: $background-color_7;
+    color: $color_3;
+  }
+}
+.right {
+  order: 2;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.softimg {
+  height: 60%;
+  width: 80%;
+  border: 3px solid #000;
+}

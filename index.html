@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="light">
+    <main class="main">
+      <nav class="nav nav-fixed" id="nav">
+        <h2 class="nav-logo"><a class="logo-link" href="">Ankit.dev</a></h2>
+        <img src="./img/Ankit.jpg" alt="Ankit" class="nav-profile" />
+      </nav>
+
+      <div class="sidenav">
+        <div class="menubar menu-visible">
+          <ul class="side-nav">
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon icon-menu">
+                  <use xlink:href="./img/sprite.svg#icon-menu"></use>
+                </svg>
+                <span class="menu-name">Menu</span>
+              </a>
+            </li>
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#nav" class="side-nav__link">
+                <svg class="side-nav__icon icon-home">
+                  <use xlink:href="./img/sprite.svg#icon-home"></use>
+                </svg>
+                <span class="menu-name">Home</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#project" class="side-nav__link">
+                <svg class="side-nav__icon icon-home">
+                  <use xlink:href="./img/sprite.svg#icon-folder-images"></use>
+                </svg>
+                <span class="menu-name">Projects</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#skills" class="side-nav__link">
+                <svg class="side-nav__icon icon-home">
+                  <use xlink:href="./img/sprite.svg#icon-yelp"></use>
+                </svg>
+                <span class="menu-name">SKills</span>
+              </a>
+            </li>
+            <li class="side-nav__item has-dropdown">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon icon-home">
+                  <use xlink:href="./img/sprite.svg#icon-v-card"></use>
+                </svg>
+                <span class="menu-name">Contact</span>
+                <ul class="dropdown dropdown--active">
+                  <li class="dropdown-item dropdown-item--active">
+                    <a
+                      rel="noopener"
+                      target="_blank"
+                      href="mailto:ankitbhuwad444@gmail.com"
+                      >Gmail</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a
+                      rel="noopener"
+                      target="_blank"
+                      href="https://github.com/Ankit73-bit?tab=repositories"
+                      >GitHub</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a
+                      rel="noopener"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/ankit-bhuwad-278ba421a/"
+                      >Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="side-nav__item has-dropdown">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon icon-theme">
+                  <use xlink:href="./img/sprite.svg#icon-v-card"></use>
+                </svg>
+                <span class="menu-name">Theme</span>
+                <ul class="dropdown dropdown--active">
+                  <li class="dropdown-item dropdown-item--active">
+                    <a id="light" href="#">Light</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a id="dark" href="#">Dark</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="sidebar">
+          <button class="btn-menu">
+            <svg class="side-nav__icon icon-menu">
+              <use xlink:href="./img/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <header class="header">
+          <div class="left">
+            <p class="hi">Hi, I'm</p>
+            <h1 class="name">Ankit Bhuwad</h1>
+            <p class="developer">Full Stack Developer</p>
+            <a href="./Ankit Resume.pdf" download class="cv">Download CV</a>
+          </div>
+          <div class="right">
+            <img src="./img/sd.png" alt="sd" class="softimg" />
+          </div>
+        </header>
+
+        <div class="projects" id="project">
+          <!-- project title -->
+          <h1 class="project-title">Projects</h1>
+
+          <!-- project 1 -->
+          <div class="project">
+            <div class="icon">
+              <svg class="project-icon">
+                <use xlink:href="./img/sprite.svg#icon-number2"></use>
+              </svg>
+            </div>
+            <div class="info">
+              <h2 class="project-name">
+                E-commerce App
+                <span
+                  ><a
+                    target="_blank"
+                    href="https://github.com/Ankit73-bit/Ecommerce-App"
+                    ><svg class="git-icon">
+                      <use xlink:href="./img/sprite.svg#icon-github"></use></svg
+                  ></a>
+                </span>
+              </h2>
+              <p class="description">
+                An all-in-one e-commerce app that offers a seamless shopping
+                experience with a wide range of products, and personalized
+                recommendations.
+              </p>
+              <p class="tech">
+                <span class="tech-name">Tech</span> : React.js, Node.js,
+                MongoDB, Express, Bootstrap, Html, CSS
+              </p>
+              <a
+                target="_blank"
+                class="demo"
+                href="https://e-commerce-app.cyclic.cloud/"
+                >Demo &#8674;</a
+              >
+            </div>
+          </div>
+
+          <!-- project 2 -->
+          <div class="project">
+            <div class="icon">
+              <svg class="project-icon">
+                <use xlink:href="./img/sprite.svg#icon-number1"></use>
+              </svg>
+            </div>
+            <div class="info">
+              <h2 class="project-name">
+                Eat-N-Split
+                <span
+                  ><a
+                    target="_blank"
+                    href="https://github.com/Ankit73-bit/Eat-N-Split"
+                    ><svg class="git-icon">
+                      <use xlink:href="./img/sprite.svg#icon-github"></use></svg
+                  ></a>
+                </span>
+              </h2>
+              <p class="description">Split bill with your friends.</p>
+              <p class="tech">
+                <span class="tech-name">Tech</span> : React.js, Html, CSS,
+                JavaScript
+              </p>
+              <a
+                target="_blank"
+                class="demo"
+                href="https://eat-split-1.netlify.app/"
+                >Demo &#8674;</a
+              >
+            </div>
+          </div>
+
+          <!-- project 3 -->
+          <div class="project project-3">
+            <div class="icon">
+              <svg class="project-icon">
+                <use xlink:href="./img/sprite.svg#icon-number"></use>
+              </svg>
+            </div>
+            <div class="info">
+              <h2 class="project-name">
+                GoFood
+                <span
+                  ><a
+                    target="_blank"
+                    href="https://github.com/Ankit73-bit/gofood-food-aggregator"
+                    ><svg class="git-icon">
+                      <use xlink:href="./img/sprite.svg#icon-github"></use></svg
+                  ></a>
+                </span>
+              </h2>
+              <p class="description">
+                A complete GoFood App using MERN stack where you can order food
+                online.
+              </p>
+              <p class="tech">
+                <span class="tech-name">Tech</span> : Node.js, React, Express,
+                MongoDB, Bootstrap, JWTokens.
+              </p>
+            </div>
+          </div>
+
+          <h1 class="project-title">Skills</h1>
+        </div>
+
+        <div class="skills" id="skills">
+          <div class="skill skill-1">
+            <svg class="skill-icon">
+              <use xlink:href="./img/sprite.svg#icon-javascript"></use>
+            </svg>
+          </div>
+          <div class="skill skill-2">
+            <svg class="skill-icon">
+              <use xlink:href="./img/sprite.svg#icon-react"></use>
+            </svg>
+          </div>
+          <div class="skill skill-3">
+            <svg class="skill-icon">
+              <use
+                xlink:href="./img/sprite.svg#icon-node-dot-js
+              "
+              ></use>
+            </svg>
+          </div>
+          <div class="skill skill-4">
+            <svg class="skill-icon">
+              <use xlink:href="./img/sprite.svg#icon-mongodb"></use>
+            </svg>
+          </div>
+          <div class="skill skill-5">
+            <svg class="skill-icon">
+              <use xlink:href="./img/sprite.svg#icon-html5"></use>
+            </svg>
+          </div>
+          <div class="skill skill-6">
+            <svg class="skill-icon">
+              <use xlink:href="./img/sprite.svg#icon-css3"></use>
+            </svg>
+          </div>
+          <div class="skill skill-7">
+            <svg class="skill-icon">
+              <use xlink:href="./img/sprite.svg#icon-python"></use>
+            </svg>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-nav">
+            <li class="footer-nav__item">
+              <a
+                rel="noopener"
+                target="_blank"
+                href="mailto:ankitbhuwad444@gmail.com"
+                class="footer-nav__link"
+                >Gmail</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://github.com/Ankit73-bit?tab=repositories"
+                class="footer-nav__link"
+                >GitHub</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://www.linkedin.com/in/ankit-bhuwad-278ba421a/"
+                class="footer-nav__link"
+                >Linkedin</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a href="#project" class="footer-nav__link">Projects</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#skills" class="footer-nav__link">SKills</a>
+            </li>
+          </div>
+          <p class="copyright">
+            Copyright &#169; 2023 Ankit Bhuwad. All Rights Reserved.
+          </p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
